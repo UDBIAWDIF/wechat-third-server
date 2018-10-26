@@ -1,3 +1,5 @@
 .phpstorm.meta.php
 */Runtime/
 /Public/Uploads/*
+/Runtime
+/Config/Constant_Example.php

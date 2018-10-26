@@ -1,6 +1,6 @@
 <?php
+
 return array(
-	//'配置项'=>'配置值'
-    'SHOW_PAGE_TRACE' => true,
-    'URL_HTML_SUFFIX' => '',     // 不设置伪静态
+	'SHOW_PAGE_TRACE' => \CommonConfig\APP_DEBUG,
+	'URL_HTML_SUFFIX' => '',     // 不设置伪静态
 );

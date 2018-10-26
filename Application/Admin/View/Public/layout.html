@@ -11,7 +11,7 @@
     <!-- 头部导航栏 -->
     <header class="top-nav row">
         <a href="{:U('index/index')}" class="logo">
-            <img src="/Assets/images/logo.png" alt="Logo">
+            <img src="__PUBLIC__/images/logo.png" alt="Logo">
         </a>
         <h3 class="col title">{$title}</h3>
         <div class="user">
@@ -66,9 +66,9 @@
             };
         }
     </script>
-    <script src="/Assets/js/lib/vue.js"></script>
+    <script src="__PUBLIC__/js/lib/vue.js"></script>
     <!--<script src="/Assets/js/lib/vue.min.js"></script>-->
-    <script src="/Assets/js/lib/vue-resource.min.js"></script>
+    <script src="__PUBLIC__/js/lib/vue-resource.min.js"></script>
     <notempty name="load_script">
         <foreach name="load_script" item="script">
             <script src="{$script}"></script>

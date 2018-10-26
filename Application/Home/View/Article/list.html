@@ -21,9 +21,9 @@
     </div>
 </main>
 
-<assign name="load_script[]" value="/Assets/js/lib/vue.js" />
-<assign name="load_script[]" value="/Assets/js/lib/vue-resource.min.js" />
-<assign name="load_script[]" value="/Assets/js/home/article-list.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/lib/vue.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/lib/vue-resource.min.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/home/article-list.js" />
 <script>
     var articles = {:json_encode($articles, JSON_UNESCAPED_UNICODE)};
 </script>

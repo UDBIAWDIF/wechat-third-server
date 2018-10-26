@@ -36,8 +36,7 @@ class UserController extends CommonController
     public function login()
     {
         if (IS_GET) {
-            $redirect = I('get.from') ? urldecode(I('get.from')) : U('Index/index');
-
+            $redirect = I('get.from') ? base64_decode(I('get.from')) : U('Index/index');
             if ($this->checkLogin()) {
                 redirect($redirect);
                 exit();
@@ -73,7 +72,7 @@ class UserController extends CommonController
     protected function register()
     {
         if (IS_GET) {
-            $redirect = I('get.from') ? urldecode(I('get.form')) : '/';
+            $redirect = I('get.from') ? base64_decode(I('get.form')) : '/';
 
             $this->assign('redirect', $redirect)
                 ->assign('title', '注册')
