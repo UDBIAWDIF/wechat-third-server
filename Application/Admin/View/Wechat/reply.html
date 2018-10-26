@@ -288,14 +288,14 @@
 
     <div class="loading bg-mask" v-show="loading">
         <div class="wrap">
-            <img src="/Assets/images/loading.svg">
+            <img src="__PUBLIC__/images/loading.svg">
             <small class="load-msg">{{ loadMsg }}</small>
         </div>
     </div>
 </div>
 
 
-<assign name="load_script[]" value="/Assets/js/admin/wechat/reply.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/admin/wechat/reply.js" />
 <script>
     var urls = {
         setReply: "{:U('Reply/setReply')}",

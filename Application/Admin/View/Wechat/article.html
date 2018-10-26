@@ -1,6 +1,6 @@
 <layout name="Public/layout" />
 
-<link rel="stylesheet" href="/Assets/wangEditor/wangEditor.min.css">
+<link rel="stylesheet" href="__PUBLIC__/wangEditor/wangEditor.min.css">
 
 <div class="wx-articles" id="articles" v-cloak>
     <div class="lists main main-lg" v-if="!editArticle" v-show="!showForm">
@@ -158,16 +158,16 @@
 
     <div class="loading bg-mask" v-show="loading">
         <div class="wrap">
-            <img src="/Assets/images/loading.svg">
+            <img src="__PUBLIC__/images/loading.svg">
             <small class="load-msg">{{ loadMsg }}</small>
         </div>
     </div>
 </div>
 
 
-<assign name="load_script[]" value="/Assets/js/lib/jquery.min.js" />
-<assign name="load_script[]" value="/Assets/wangEditor/wangEditor.min.js" />
-<assign name="load_script[]" value="/Assets/js/admin/wechat/articles.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/lib/jquery.min.js" />
+<assign name="load_script[]" value="__PUBLIC__/wangEditor/wangEditor.min.js" />
+<assign name="load_script[]" value="__PUBLIC__/js/admin/wechat/articles.js" />
 <script>
     var edit = +"{:I('get.edit')}";
     var urls = {
